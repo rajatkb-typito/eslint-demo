@@ -1,0 +1,36 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+   
+
+    "extends": ["prettier" , "eslint:recommended" ,  "plugin:node/recommended" , "plugin:security/recommended" , "plugin:sonarjs/recommended"],
+    "plugins": ["prettier" , "optimize-regex" , "no-secrets" , "security" , "sonarjs"],
+    "rules": {
+        "security/detect-unsafe-regex":"warn",
+        "block-scoped-var":"error",
+        "brace-style":"warn",
+        "no-const-assign":"error",
+        "no-mixed-requires":"error",
+        "no-unreachable":"error",
+        "no-duplicate-imports":"error",
+        "require-jsdoc":"error",
+        "endOfLine":"off",
+        "prettier/prettier": "error",
+        "no-unused-vars": "error",
+        "no-console": "off",
+        "func-names": "off",
+        "no-process-exit": "off",
+        "object-shorthand": "off",
+        "class-methods-use-this": "off",
+        "optimize-regex/optimize-regex": "error",
+        "no-secrets/no-secrets":"error"
+    }
+}
